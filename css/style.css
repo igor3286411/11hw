@@ -20,30 +20,16 @@ img {
 
 header {
   font-family: "Manrope", sans-serif;
-  background-image: url(../images/header-fon.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 45px 0 148px;
-}
-@media (max-width: 1024px) {
-  header {
-    background-image: url(../images/header-fon2.jpg);
-  }
-}
-@media (max-width: 690px) {
-  header {
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/header-fon3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
 }
 header nav {
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: flex-end;
-  margin-bottom: 125px;
 }
 @media (max-width: 690px) {
   header nav {
@@ -77,7 +63,7 @@ header nav ul a {
   font-weight: 700;
   line-height: 20px;
 }
-header nav button {
+header nav .header__nav-button {
   color: #FFF;
   font-size: 14px;
   font-weight: 700;
@@ -86,29 +72,56 @@ header nav button {
   background: #F84646;
   padding: 10px 20px;
 }
-header h1 {
+
+main {
+  font-family: "Manrope", sans-serif;
+}
+main .actual-top {
+  background-image: url(../images/header-fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0 148px;
+}
+@media (max-width: 1024px) {
+  main .actual-top {
+    background-image: url(../images/header-fon2.jpg);
+    padding: 161px 0 127px;
+  }
+}
+@media (max-width: 610px) {
+  main .actual-top {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/header-fon3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 137px 0 84px;
+  }
+}
+main .actual-top h1 {
   font-size: 64px;
   font-weight: 800;
   line-height: 82px;
   max-width: 665px;
 }
 @media (max-width: 1024px) {
-  header h1 {
+  main .actual-top h1 {
     font-size: 56px;
+    line-height: 74px;
   }
 }
-@media (max-width: 690px) {
-  header h1 {
+@media (max-width: 610px) {
+  main .actual-top h1 {
     font-size: 42px;
     text-align: center;
+    line-height: 58px;
   }
 }
 @media (max-width: 360px) {
-  header h1 {
+  main .actual-top h1 {
     font-size: 36px;
   }
 }
-header p {
+main .actual-top p {
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -117,24 +130,27 @@ header p {
   margin: 20px 0 50px;
 }
 @media (max-width: 1024px) {
-  header p {
+  main .actual-top p {
     font-size: 16px;
+    line-height: 28px;
+    margin: 20px 0;
   }
 }
-@media (max-width: 530px) {
-  header p {
+@media (max-width: 610px) {
+  main .actual-top p {
     font-size: 12px;
     text-align: center;
+    line-height: 23px;
   }
 }
-header .header__form {
+main .actual-top .header__form {
   max-width: 502px;
   height: 73px;
   border-radius: 8px;
   background: #FFF;
   padding: 6px 6px 6px 32px;
 }
-header .header__form input {
+main .actual-top .header__form input {
   color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
   font-weight: 400;
@@ -145,62 +161,62 @@ header .header__form input {
   outline: none;
 }
 @media (max-width: 1024px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 75%;
   }
 }
 @media (max-width: 530px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 78%;
   }
 }
 @media (max-width: 520px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 77%;
   }
 }
 @media (max-width: 500px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 76%;
   }
 }
 @media (max-width: 480px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 74%;
   }
 }
 @media (max-width: 450px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 72%;
   }
 }
 @media (max-width: 420px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 70%;
     font-size: 14px;
   }
 }
 @media (max-width: 390px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 68%;
   }
 }
 @media (max-width: 370px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 66%;
   }
 }
 @media (max-width: 350px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 64%;
   }
 }
 @media (max-width: 335px) {
-  header .header__form input {
+  main .actual-top .header__form input {
     width: 62%;
   }
 }
-header .header__form button {
+main .actual-top .header__form button {
   color: #FFF;
   font-size: 16px;
   font-weight: 700;
@@ -211,18 +227,14 @@ header .header__form button {
   padding: 12px 37px;
 }
 @media (max-width: 1024px) {
-  header .header__form button {
+  main .actual-top .header__form button {
     padding: 12px 25px;
   }
 }
 @media (max-width: 530px) {
-  header .header__form button {
+  main .actual-top .header__form button {
     padding: 12px 18px;
   }
-}
-
-main {
-  font-family: "Manrope", sans-serif;
 }
 main .actual {
   padding: 120px 0 140px;
@@ -243,7 +255,7 @@ main .actual h2 {
     font-size: 24px;
   }
 }
-main .actual p {
+main .actual .actual-p {
   text-align: center;
   font-size: 24px;
   font-weight: 400;
@@ -253,9 +265,10 @@ main .actual p {
   margin: 30px auto 91px;
 }
 @media (max-width: 450px) {
-  main .actual p {
+  main .actual .actual-p {
     font-size: 12px;
     margin: 15px auto 40px;
+    line-height: 22px;
   }
 }
 main .actual .actual__cards {
@@ -272,7 +285,6 @@ main .actual .actual__cards {
 main .actual .actual__cards .actual__cards-card {
   max-width: 298px;
   text-align: center;
-  height: 211px;
 }
 @media (max-width: 1024px) {
   main .actual .actual__cards .actual__cards-card {
@@ -309,6 +321,7 @@ main .actual-test h2 {
 @media (max-width: 500px) {
   main .actual-test h2 {
     font-size: 36px;
+    line-height: 47px;
   }
 }
 main .actual-test .actual-test__top-p {
@@ -317,6 +330,11 @@ main .actual-test .actual-test__top-p {
   font-weight: 400;
   line-height: 32px;
   margin: 8px 0 64px;
+}
+@media (max-width: 500px) {
+  main .actual-test .actual-test__top-p {
+    font-size: 14px;
+  }
 }
 main .actual-test .actual-test__flex {
   display: flex;
@@ -332,12 +350,16 @@ main .actual-test .actual-test__flex {
 }
 main .actual-test .actual-test__flex img {
   width: 32px;
-  height: 32px;
+}
+@media (max-width: 1024px) {
+  main .actual-test .actual-test__flex img {
+    width: 29px;
+  }
 }
 @media (max-width: 730px) {
   main .actual-test .actual-test__flex img {
     transform: rotate(90deg);
-    width: 29px;
+    width: 36px;
   }
 }
 main .actual-test .actual-test__flex p {
@@ -383,7 +405,7 @@ main .actual-test .actual-test__flex-p3 {
 main .actual-kalite {
   padding: 160px 0;
 }
-@media (max-width: 790px) {
+@media (max-width: 820px) {
   main .actual-kalite {
     padding: 90px 0 79px;
   }
@@ -398,19 +420,17 @@ main .actual-kalite img {
 }
 @media (max-width: 920px) {
   main .actual-kalite img {
-    width: 380px;
+    width: 400px;
   }
 }
 @media (max-width: 450px) {
   main .actual-kalite img {
     width: 335px;
-    height: 312px;
   }
 }
 @media (max-width: 350px) {
   main .actual-kalite img {
     width: 300px;
-    height: 280px;
   }
 }
 main .actual-kalite h2 {
@@ -424,18 +444,30 @@ main .actual-kalite h2 {
   main .actual-kalite h2 {
     font-size: 58px;
     max-width: 428px;
+    line-height: 59px;
   }
 }
 @media (max-width: 920px) {
   main .actual-kalite h2 {
-    max-width: 350px;
+    max-width: 380px;
     font-size: 40px;
   }
 }
-@media (max-width: 790px) {
+@media (max-width: 850px) {
+  main .actual-kalite h2 {
+    max-width: 350px;
+  }
+}
+@media (max-width: 820px) {
   main .actual-kalite h2 {
     max-width: 336px;
     text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  main .actual-kalite h2 {
+    font-size: 36px;
+    line-height: 41px;
   }
 }
 main .actual-kalite p {
@@ -450,6 +482,7 @@ main .actual-kalite p {
   main .actual-kalite p {
     font-size: 14px;
     max-width: 428px;
+    line-height: 28px;
   }
 }
 @media (max-width: 1024px) {
@@ -459,10 +492,15 @@ main .actual-kalite p {
 }
 @media (max-width: 920px) {
   main .actual-kalite p {
+    max-width: 380px;
+  }
+}
+@media (max-width: 850px) {
+  main .actual-kalite p {
     max-width: 350px;
   }
 }
-@media (max-width: 790px) {
+@media (max-width: 820px) {
   main .actual-kalite p {
     max-width: 336px;
     text-align: center;
@@ -480,7 +518,7 @@ main .actual-kalite button {
   padding: 12px;
   text-align: center;
 }
-@media (max-width: 790px) {
+@media (max-width: 820px) {
   main .actual-kalite button {
     width: 100%;
   }
@@ -490,7 +528,7 @@ main .actual-kalite__top {
   justify-content: space-between;
   margin-bottom: 120px;
 }
-@media (max-width: 790px) {
+@media (max-width: 820px) {
   main .actual-kalite__top {
     flex-direction: column-reverse;
     align-items: center;
@@ -502,55 +540,11 @@ main .actual-kalite__bottom {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 790px) {
+@media (max-width: 820px) {
   main .actual-kalite__bottom {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-  }
-}
-main .actual-kalite__bottom .actual-kalite__bottom-img {
-  background-image: url(../images/computer.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  width: 504px;
-  height: 480px;
-}
-@media (max-width: 1130px) {
-  main .actual-kalite__bottom .actual-kalite__bottom-img {
-    height: 512px;
-  }
-}
-@media (max-width: 1024px) {
-  main .actual-kalite__bottom .actual-kalite__bottom-img {
-    background-image: url(../images/illustration.jpg);
-  }
-}
-@media (max-width: 1024px) {
-  main .actual-kalite__bottom .actual-kalite__bottom-img {
-    width: 424px;
-    height: 458px;
-    background-position: center;
-  }
-}
-@media (max-width: 920px) {
-  main .actual-kalite__bottom .actual-kalite__bottom-img {
-    background-position: right;
-    width: 380px;
-    height: 490px;
-  }
-}
-@media (max-width: 450px) {
-  main .actual-kalite__bottom .actual-kalite__bottom-img {
-    width: 335px;
-    height: 312px;
-  }
-}
-@media (max-width: 350px) {
-  main .actual-kalite__bottom .actual-kalite__bottom-img {
-    width: 300px;
-    height: 280px;
   }
 }
 main .recomend {
@@ -577,6 +571,7 @@ main .recomend h2 {
 @media (max-width: 600px) {
   main .recomend h2 {
     font-size: 36px;
+    line-height: 41px;
   }
 }
 main .recomend .recomend-p {
